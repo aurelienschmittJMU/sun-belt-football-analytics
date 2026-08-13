@@ -1,186 +1,88 @@
-# \# Sun Belt Football Spending \& Performance Analysis
+# Sun Belt Football Spending & Performance Analysis
 
-# 
+## Overview
 
-# \## Overview
+This project analyzes the relationship between reported football spending and on-field performance across 14 NCAA Division I Sun Belt Conference football programs.
 
-# 
+The analysis combines an Excel dashboard with a Python companion notebook. The objective is to compare spending levels, performance outcomes, and spending-efficiency metrics during the 2023 football season using EADA Survey Year 2024 financial data.
 
-# This project analyzes the relationship between reported football spending and on-field performance across 14 NCAA Division I Sun Belt Conference football programs.
+## Research Question
 
-# 
+Which Sun Belt football programs achieved the strongest on-field performance relative to their reported spending during the 2023 season?
 
-# The analysis combines an Excel dashboard with a Python companion notebook. The objective is to compare spending levels, performance outcomes, and spending-efficiency metrics during the 2023 football season using EADA Survey Year 2024 financial data.
+## Repository Structure
 
-# 
+- data/
+  - Aurelien_Schmitt_Sun_Belt_Football_Analytics_Project.xlsx
+  - Sport_Data_2024.csv
 
-# \## Research Question
+- notebooks/
+  - sun_belt_analysis.ipynb
 
-# 
+- outputs/
+  - Aurelien_Schmitt_Sun_Belt_Football_Analytics_Dashboard.pdf
+  - Sun_Belt_Football_Analytics_Notebook.html
+  - Sun_Belt_Python_Companion_Summary.pdf
+  - assets/
 
-# Which Sun Belt football programs achieved the strongest on-field performance relative to their reported spending during the 2023 season?
+- requirements.txt
+- LICENSE
 
-# 
+## Tools Used
 
-# \## Files in This Repository
+- Microsoft Excel
+- Python
+- pandas
+- NumPy
+- matplotlib
+- Jupyter Notebook
 
-# 
+## Methodology
 
-# ```text
+The analysis uses:
 
-# sun-belt-football-analytics-project/
+- Football participants and football expenses from the U.S. Department of Education EADA Survey Year 2024
+- 2023 overall and conference football records from Sun Belt Conference standings
+- Calculated performance and efficiency metrics:
+  - expenses per participant
+  - overall win percentage
+  - conference win percentage
+  - wins per $1M spent
+  - conference wins per $1M spent
 
-# ├── data/
+The Python notebook independently recalculates the key metrics from the Excel dataset, validates selected outputs, ranks programs by spending efficiency, calculates correlations, and generates visualizations.
 
-# │   ├── Aurelien\_Schmitt\_Sun\_Belt\_Football\_Analytics\_Project.xlsx
+## Key Findings
 
-# │   └── Sport\_Data\_2024.csv
+- The relationship between reported football expenses and conference win percentage was moderately positive, but limited.
+- Reported football spending explained approximately 16% of the observed linear variation in conference win percentage within the sample.
+- Troy ranked as the strongest spending-efficiency performer by wins per $1M spent.
+- James Madison combined high spending with strong conference performance.
+- Texas State reported the highest football expenses but did not lead the conference in win percentage.
 
-# ├── notebooks/
+## Limitations
 
-# │   └── sun\_belt\_analysis.ipynb
+- The analysis covers one conference and one football season only.
+- Correlation does not establish causation.
+- Strength of schedule, injuries, coaching changes, roster quality, and recruiting strength are not controlled.
+- EADA expenses exclude capital expenditures, debt service, and certain indirect facility costs.
+- Reported EADA expenses are annual actual expenditures, not a preseason budget.
 
-# ├── outputs/
+## How to Run the Notebook
 
-# │   ├── Aurelien\_Schmitt\_Sun\_Belt\_Football\_Analytics\_Dashboard.pdf
+The notebook is stored in the notebooks/ folder and expects the Excel workbook to be available in the data/ folder.
 
-# │   ├── Sun\_Belt\_Football\_Analytics\_Notebook.html
+From the repository root, open:
 
-# │   ├── Sun\_Belt\_Python\_Companion\_Summary.pdf
+notebooks/sun_belt_analysis.ipynb
 
-# │   └── assets/
+The notebook uses the following relative path:
 
-# ├── README.md
+../data/Aurelien_Schmitt_Sun_Belt_Football_Analytics_Project.xlsx
 
-# ├── requirements.txt
+## Author
 
-# └── .gitignore
-
-# ```
-
-# 
-
-# \## Tools Used
-
-# 
-
-# \- Microsoft Excel
-
-# \- Python
-
-# \- pandas
-
-# \- NumPy
-
-# \- matplotlib
-
-# \- Jupyter Notebook
-
-# 
-
-# \## Methodology
-
-# 
-
-# The analysis uses:
-
-# 
-
-# \- Football participants and football expenses from the U.S. Department of Education EADA Survey Year 2024
-
-# \- 2023 overall and conference football records from Sun Belt Conference standings
-
-# \- Calculated performance and efficiency metrics, including:
-
-# &#x20; - expenses per participant
-
-# &#x20; - overall win percentage
-
-# &#x20; - conference win percentage
-
-# &#x20; - wins per $1M spent
-
-# &#x20; - conference wins per $1M spent
-
-# 
-
-# The Python notebook independently recalculates the key metrics from the Excel dataset, validates selected outputs, ranks programs by spending efficiency, calculates correlations, and generates visualizations.
-
-# 
-
-# \## Key Findings
-
-# 
-
-# \- The relationship between reported football expenses and conference win percentage was moderately positive, but limited.
-
-# \- Reported football spending explained approximately 16% of the observed linear variation in conference win percentage within the sample.
-
-# \- Troy ranked as the strongest spending-efficiency performer by wins per $1M spent.
-
-# \- James Madison combined high spending with strong conference performance.
-
-# \- Texas State reported the highest football expenses but did not lead the conference in win percentage.
-
-# 
-
-# \## Limitations
-
-# 
-
-# \- The analysis covers one conference and one football season only.
-
-# \- Correlation does not establish causation.
-
-# \- Strength of schedule, injuries, coaching changes, roster quality, and recruiting strength are not controlled.
-
-# \- EADA expenses exclude capital expenditures, debt service, and certain indirect facility costs.
-
-# \- Reported EADA expenses are annual actual expenditures, not a preseason budget.
-
-# 
-
-# \## How to Run the Notebook
-
-# 
-
-# The notebook is stored in the `notebooks/` folder and expects the Excel workbook to be available in the `data/` folder.
-
-# 
-
-# From the repository root, open:
-
-# 
-
-# ```text
-
-# notebooks/sun\_belt\_analysis.ipynb
-
-# ```
-
-# 
-
-# The notebook uses the following relative path:
-
-# 
-
-# ```python
-
-# ../data/Aurelien\_Schmitt\_Sun\_Belt\_Football\_Analytics\_Project.xlsx
-
-# ```
-
-# 
-
-# \## Author
-
-# 
-
-# Aurelien Schmitt  
-
-# BBA Finance | Business Analytics Minor  
-
-# NCAA Division 1 Tennis Student-Athlete  
-
-# James Madison University
-
+Aurelien Schmitt  
+BBA Finance | Business Analytics Minor  
+NCAA Division I Tennis Student-Athlete  
+James Madison University
