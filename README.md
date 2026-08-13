@@ -21,7 +21,6 @@ Which Sun Belt football programs achieved the strongest on-field performance rel
 
 - outputs/
   - Aurelien_Schmitt_Sun_Belt_Football_Analytics_Dashboard.pdf
-  - Sun_Belt_Football_Analytics_Notebook.html
   - Sun_Belt_Python_Companion_Summary.pdf
   - assets/
 
@@ -67,6 +66,7 @@ The Python notebook independently recalculates the key metrics from the Excel da
 - Strength of schedule, injuries, coaching changes, roster quality, and recruiting strength are not controlled.
 - EADA expenses exclude capital expenditures, debt service, and certain indirect facility costs.
 - Reported EADA expenses are annual actual expenditures, not a preseason budget.
+- Overall-season metrics are less directly comparable because teams played different numbers of games due to postseason participation.
 
 ## How to Run the Notebook
 
@@ -84,5 +84,5 @@ The notebook uses the following relative path:
 
 Aurelien Schmitt  
 BBA Finance | Business Analytics Minor  
-NCAA Division I Tennis Student-Athlete  
+NCAA Division 1 Tennis Student-Athlete  
 James Madison University
