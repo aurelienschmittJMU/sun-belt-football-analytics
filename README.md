@@ -83,6 +83,6 @@ The notebook uses the following relative path:
 ## Author
 
 Aurelien Schmitt  
-BBA Finance | Business Analytics Minor  
+BBA Business Management | Business Analytics Minor  
 NCAA Division 1 Tennis Student-Athlete  
 James Madison University
